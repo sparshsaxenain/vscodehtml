@@ -62,6 +62,6 @@ bitcoin.addBlock(new Block(1,"10/07/2017",{amount : 4}));
 bitcoin.addBlock(new Block(2,"12/07/2017",{amount : 10}));
 
 
-bitcoin.chain[1].data = {amount : 100};
+// bitcoin.chain[1].data = {amount : 100};
 console.log('Is blockchain valid? ' + bitcoin.isChainValid());
 console.log(JSON.stringify(bitcoin,null,4));
