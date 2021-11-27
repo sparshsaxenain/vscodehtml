@@ -1,0 +1,16 @@
+step 1-: install pip tool
+step 2-: install npm
+step 3-: install cordova (pip install cordova)
+step 4-: install Android studio
+
+create app project
+
+$cordova create MyGeuApp
+browse directory of app
+
+add platform
+$cd directory/
+$cordova platforms
+$cordova platform add browser
+$cordova platform add android
+$cordova run android

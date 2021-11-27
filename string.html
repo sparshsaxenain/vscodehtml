@@ -1,0 +1,78 @@
+<html>
+    <head>
+	</head>
+	<body>
+	    <script>
+		    var str="Graphic Era University"
+			var str1="GEU,GEHU"
+			console.log(str.length)
+			console.log(str.indexOf("U"))
+			console.log(str.lastIndexOf("U"))
+			console.log(str.charAt(10))
+			console.log(str.charCodeAt(10))
+			var v1=str.split("")
+			console.log(v1)
+			var v2=str1.split(",")
+			console.log(typeof v1)
+			console.log(v2)
+			console.log(v1.length) //v1 is array
+			console.log(v2[0])
+			console.log(str.toUpperCase())
+			console.log(str.toLowerCase())
+			console.log(str.substr(0,5)) //substr(start_index,length)
+			console.log(str.substring(10,20)) //substring(start_index,last_index)
+			
+			var test1=[1,2,4,0]
+			if(typeof test1==="object")
+			{
+			    console.log("True")
+			}
+			else
+			{
+			    console.log("False")
+			}
+			function check_type()
+			{
+			    var testdata="Graphic Era university"
+				if(typeof str==="string")
+			    {
+			       console.log("True")
+			    }
+			    else
+			    {
+			    console.log("False")
+			    }
+			}
+			check_type()
+			function is_blank()
+			{
+			    var test_data=""
+			    if(test_data.length===0)
+				{
+				    console.log("True")
+				}
+				else
+				{
+				    console.log("False")
+				}
+			}
+			is_blank()
+			var test_data2="Robin Singh"
+			function string_to_array(test_data2)
+			{
+				var sta=test_data2.split(" ")
+				console.log(sta)
+			}
+			string_to_array(test_data2)
+			var x=4
+			function abbrev_name(test_data2,x)
+			{
+			    var an=test_data2.substr(0,4)
+				console.log(an)
+			}
+			abbrev_name(test_data2,x)
+			
+				
+		</script>
+	</body>
+<html>

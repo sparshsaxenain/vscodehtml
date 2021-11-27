@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+	</head>
+	<body>
+	    <p id='up'></p>
+		<input type='button' onclick='swapcase()' value='start'/>
+		<script>
+		    
+			function swapcase()
+			{
+			    var x=prompt("ENTER THE STRING","");
+				var strings="";
+				var i=0;
+				while(i<x.length)
+				{
+					if(x[i]==x[i].toUpperCase())
+					{
+					    strings=strings+x[i].toLowerCase();
+					}
+					else
+					{
+					    strings=strings+x[i].toUpperCase();
+					}
+					console.log(strings);
+			        i++;
+				}
+				document.getElementById('up').innerHTML=strings;
+			}
+		</script>
+	</body>
+</html>

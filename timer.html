@@ -1,0 +1,56 @@
+<html>
+    <head>
+	    <script>
+		var x;
+		var sec1=0;
+		var min=0;
+		var hr=0;
+		var time;
+		function test()
+		{
+		    time=window.setInterval(hello,1000);
+		}
+		function hello()
+		{
+		    
+			sec1=sec1+1;
+			if(sec1===60)
+			{
+			    sec1=0;
+			    min=min+1;
+			}
+			if(min===60)
+			{
+			    min=0;
+				hr=hr+1;
+			}
+			x=hr+" hours:"+min+" minutes:"+sec1+" seconds";
+			document.getElementById("t1").innerHTML = x;
+		}
+		function test1()
+		{
+		    window.clearInterval(time);
+		}
+		function test2()
+		{
+		    
+			sec1=0;
+			min=0;
+			hr=0;
+			
+			x=hr+" hours:"+min+" minutes:"+sec1+" seconds";
+			test1();
+			document.getElementById("t1").innerHTML = x;
+		}
+		</script>
+	</head>
+	
+	<body>
+	    <script>
+	    </script>
+		<p id="t1"></p>
+	    <input type="button" value="start" onclick="test()">
+		<input type="button" value="stop" onclick="test1()">
+		<input type="button" value="reset" onclick="test2()">
+	</body>
+</html>

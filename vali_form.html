@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+	    <script>
+		    function validatef()
+			{
+			    console.log("hello");
+			    var x=document.myform.em.value;
+				console.log(x);
+				if(x=="")
+				{
+				    alert("ENTER VALID EMAIL");
+				    return false;
+				}
+				var splitted=x.split("@");
+				if(splitted[1]=="" || splitted==x)
+				{
+				    alert("ENTER VALID EMAIL");
+				    return false;
+				}
+				var splitfurther=splitted[1].split(".");
+				if(splitfurther[1].length>3)
+				{
+				    alert("ENTER VALID EMAIL");
+				    return false;
+				}
+				var y=parseInt(document.myform.pn.value);
+				console.log(y.length);
+				
+				if(y.length>10 || y.length<10)
+				{
+				    alert("Enter valid number");
+				    return false;
+				}
+				
+			}
+		</script>
+	</head>
+	<body>
+	    <form name="myform" onsubmit="return validatef();" method="post">
+		    Full Name: <input type= "text" name="fn" required/><br/>
+			Email:<input type="text" name="em" required/><br/>
+			Phone Number:<input type="text" name="pn" required/><br/>
+			<input type="submit" value="submit"/>
+		</form>
+		
+	</body>
+</html>
+	

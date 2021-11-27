@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/css" href="sty.css" ?>
+<!DOCTYPE student [
+<!ELEMENT student (student_info)*>
+<!ELEMENT student_info (name, branch,(email)*, mobile)+ >
+<!ATTRIBUTE id(#CDATA)>
+<!ELEMENT name (fname,lname) >
+<!ELEMENT fname (#PCDATA)>
+<!ELEMENT lname (#PCDATA)>
+<!ELEMENT branch (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT mobile (#PCDATA)>
+]>
+<student>
+    <student_info id="CSE100">
+	    <name>
+	        <fname>Nitehs</fname>
+		    <lname>Kumar</lname>
+		</name>
+		<branch>CSE</branch>
+		<email>abc@gmail.com</email>
+		<mobile>9524781235</mobile>
+	</student_info>
+	<student_info id="CSE101">
+	    <name>
+	        <fname>Rakesh</fname>
+		    <lname>Singh</lname>
+		</name>
+		<branch>CSE</branch>
+		<email>spd@geu.ac.in</email>
+		<mobile>9856214736</mobile>
+	</student_info>
+	<student_info id="IT100">
+	    <name>
+	        <fname>Hitesh</fname>
+		    <lname>Kumar</lname>
+		</name>
+		<branch>IT</branch>
+		<email>riu34@yahoo.com</email>
+		<mobile>9547821563</mobile>
+	</student_info>
+</student>
